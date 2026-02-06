@@ -1,0 +1,10 @@
+CREATE TABLE student (
+    Student_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT,
+    amount REAL,
+    description TEXT,
+    college_id INTEGER,
+    course_id INTEGER,
+    FOREIGN KEY (college_id) REFERENCES college (college_id),
+    FOREIGN KEY (course_id) REFERENCES course(course_id)
+);
